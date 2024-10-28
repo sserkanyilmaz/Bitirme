@@ -6,8 +6,8 @@
 //
 
 class WordQuiz: Quiz{
-    let word: Word
-    let letters: [Character]
+    var word: Word
+    var letters: [Character]
     
     init(word: Word) {
         self.word = word

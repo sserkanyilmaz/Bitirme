@@ -13,10 +13,11 @@ protocol CRUD {
     var database: Firestore { get  set }
     var collection: CollectionReference { get  set }
     
-    func create(item :Item) -> Item
-    func read() -> [Item]
-    func update(item :Item) -> Item
-    func delete(id :String)
+    func create(item :Item) async throws -> Item
+    func getAll() async throws -> [Item]
+    func update(item :Item) async throws-> Item
+    func delete(id :String) async throws-> Bool
+    func getbyId(id :String) async throws -> Item?
     
     init (database: Firestore , collection: CollectionReference)
     

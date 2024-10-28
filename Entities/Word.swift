@@ -6,10 +6,12 @@
 //
 
 class Word : Decodable{
-    let TurkishForm: String
-    let EnglishForm: String
+    let wordId: String
+    var TurkishForm: String
+    var EnglishForm: String
     
-    init(turkishForm: String, englishForm: String) {
+    init(wordId: String,turkishForm: String, englishForm: String) {
+        self.wordId = wordId
         self.TurkishForm = turkishForm
         self.EnglishForm = englishForm
     }
