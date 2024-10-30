@@ -5,6 +5,7 @@
 //  Created by Serkan Yılmaz on 30.10.2024.
 //
 
+import UIKit
 extension UIButton.Configuration {
     public static func appFilled() -> UIButton.Configuration {
         var configuration = UIButton.Configuration.filled()

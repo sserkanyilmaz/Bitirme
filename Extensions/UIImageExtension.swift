@@ -5,6 +5,7 @@
 //  Created by Serkan Yılmaz on 30.10.2024.
 //
 
+import UIKit
 extension UIImage {
     
     func roundedImage(cornerRadius: CGFloat) -> UIImage? {
